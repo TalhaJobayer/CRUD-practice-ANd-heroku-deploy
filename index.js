@@ -36,7 +36,7 @@ async function run(){
       });
    
 
-    // post method=================================
+    // post method   ======================================
     // front end e post korbo and back end e capture kore 
     // ====================
     app.post('/user', async(req,res)=>{
@@ -44,10 +44,7 @@ async function run(){
          console.log("ihdgiudhv",newUser);
 const result= await userCollection.insertOne(newUser)
          res.send(result)
-
-
-  
-  
+    
     })
    
   } finally {
